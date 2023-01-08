@@ -1,0 +1,55 @@
+.footer {
+  border-top: 1px solid $border;
+  padding: 34px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav {
+  &__ul {
+    display: flex;
+    gap: 55px;
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__li {
+  }
+
+  &__a {
+    @include text($font-primary, 400, 18px, 27px, $logo-color);
+    transition: $transition;
+    &:hover {
+      color: $main-color;
+      transform: translateY(-10px);
+    }
+    &_active {
+    }
+  }
+}
+.data {
+  background: $bg-color;
+  max-width: 200px;
+  label {
+    @include text($font-primary, 700, 16px, 22px, $logo-color);
+    input {
+      background: $dark;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 90px;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  &__name {
+  }
+  &__email {
+  }
+}

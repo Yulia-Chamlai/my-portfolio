@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" id="html" scroll-behavior:smooth>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yulia Chamlai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="body">
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <div class="container">
+          <header class="header">
+            <div class="header__logo">
+              <a href="#about" class="header__link"
+                ><span>Y</span>ulia <span>C</span>hamlai
+              </a>
+            </div>
+            <div class="header__burger">
+              <span
+                id="icon-menu"
+                onclick="navToggle()"
+                class="material-icons _active"
+              >
+                menu
+              </span>
+            </div>
+            <nav id="nav" class="header-nav nav">
+              <ul class="header-nav__ul">
+                <li class="header-nav__li">
+                  <a href="#" class="header-nav__a _active">Home</a>
+                </li>
+                <li class="header-nav__li">
+                  <a href="#about" i class="header-nav__a _active">About Me</a>
+                </li>
+                <li class="header-nav__li">
+                  <a href="#works" class="header-nav__a _active">Projects</a>
+                </li>
+                <li class="header-nav__li">
+                  <a href="#contacts" class="header-nav__a _active"
+                    >Contact me</a
+                  >
+                </li>
+              </ul>
+              <span
+                id="icon-close"
+                onclick="navToggle()"
+                class="material-icons"
+              >
+                close
+              </span>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <section class="main-screen">
+        <div class="container">
+          <div class="main-screen-wrapper">
+            <div class="main-screen__info">
+              <h1 class="main-screen__title">
+                HTML/CSS <span>DEVELOPER</span>
+              </h1>
+              <div class="button-row">
+                <button class="btn btn-primary">Hire me</button>
+                <button class="btn btn-secondary">
+                  <div class="btn__links">
+                    <a
+                      href="./img/my CV.pdf"
+                      download="my CV.pdf"
+                      target="_blank"
+                      >Download CV</a
+                    >
+                    <img src="./img/icons/download.svg" alt="download" />
+                  </div>
+                </button>
+              </div>
+
+              <div class="main-screen__next">
+                <img
+                  class="next-icon"
+                  src="./img/icons/next-arrow.svg"
+                  alt="next"
+                />
+              </div>
+            </div>
+            <div class="main-screen__photo">
+              <img src="./img/icons/man-main-screen.svg" alt="man" />
+            </div>
+            <!--
+
+              <form>
+                <label for="fname">Your name:</label>
+                <input type="text" id="fname" placeholder="Name" />
+                <label for="email">Your e-mail:</label>
+                <input type="email" id="email" placeholder="Email" />
+                <label for="msg">Your message:</label>
+                <textarea
+                  name=""
+                  id="msg"
+                  resize
+                  placeholder="Message"
+                ></textarea>
+              </form>
+            -->
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="about__info">
+              <h2 class="about__info-title">About <span>me</span></h2>
+              <p class="about__info-desc">
+                Hi, I'm Yulia, cerificated html/css developer. I can transform
+                your design into a code with ease. If you interested in my help
+                than follow to section "Contact me".
+              </p>
+            </div>
+            <div class="about__img">
+              <img src="./img/icons/man-about-screen.svg" alt="man" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="container">
+          <div class="works__title">My recent <span> works</span></div>
+          <div class="works__list">
+            <div class="works__item-wrapper">
+              <div class="works__item">
+                <img src="./img/wk-portfolio.png" alt="WK" />
+              </div>
+              <div class="overlay">
+                <div class="overlay__title">WK</div>
+                <div class="overlay__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="overlay__btn btn-primary">
+                  Details
+                  <a
+                    href="https://github.com/Yulia-Chamlai/WK-portfolio"
+                    target="_blanks"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__item-wrapper">
+              <div class="works__item">
+                <img src="./img/qd-center.png" alt="QD-Center" />
+              </div>
+              <div class="overlay">
+                <div class="overlay__title">QD-Center</div>
+                <div class="overlay__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="overlay__btn btn-primary">
+                  Details
+                  <a href="https://github.com/Yulia-Chamlai/QD-Center"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__item-wrapper">
+              <div class="works__item">
+                <img src="./img/logoipsum.png" alt="Logoipsum" />
+              </div>
+              <div class="overlay">
+                <div class="overlay__title">Logoipsum</div>
+                <div class="overlay__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="overlay__btn btn-primary">
+                  Details
+                  <a
+                    href="https://github.com/Yulia-Chamlai/logoipsum-project"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__item-wrapper">
+              <div class="works__item">
+                <img src="./img/the power.png" alt="Power" />
+              </div>
+              <div class="overlay">
+                <div class="overlay__title">The power</div>
+                <div class="overlay__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="overlay__btn btn-primary">
+                  Details
+                  <a
+                    href="https://github.com/Yulia-Chamlai/The-power-of-simplicity"
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__item-wrapper">
+              <div class="works__item">
+                <img src="./img/alivio.png" alt="Alivio" />
+              </div>
+              <div class="overlay">
+                <div class="overlay__title">Alivio</div>
+                <div class="overlay__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="overlay__btn btn-primary">
+                  Details
+                  <a href="https://github.com/Yulia-Chamlai/Alivio"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="works__item-wrapper">
+              <div class="works__item">
+                <img src="./img/watch-project.png" alt="Watch" />
+              </div>
+              <div class="overlay">
+                <div class="overlay__title">Watch</div>
+                <div class="overlay__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="overlay__btn btn-primary">
+                  Details
+                  <a href=" https://github.com/Yulia-Chamlai/Watch-project"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__title">Contact <span>me</span></div>
+
+          <div class="contacts__info">
+            <div class="contacts__item">
+              <div class="contacts__info-title">Telegram</div>
+              <a
+                class="contacts__info-link"
+                href="@yuliachamlai"
+                target="_blank"
+                >@yuliachamlai</a
+              >
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__info-title">Github</div>
+              <a
+                class="contacts__info-link"
+                href="https://github.com/Yulia-Chamlai"
+                target="_blank"
+                >https://github.com/Yulia-Chamlai</a
+              >
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__info-title">E-mail</div>
+              <a
+                class="contacts__info-link"
+                href="yuliachamlai@gmail.com"
+                target="_blank"
+                >yuliachamlai@gmail.com</a
+              >
+            </div>
+            <div class="contacts__item">
+              <div class="contacts__info-title">Linkedin</div>
+              <a
+                class="contacts__info-link"
+                href="www.linkedin.com/in/yulia-chamlai"
+                target="_blank"
+                >www.linkedin.com/in/yulia-chamlai</a
+              >
+            </div>
+          </div>
+          <div class="contacts__img">
+            <img src="./img/icons/man-contacts.svg" alt="man" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <nav id="nav" class="footer-nav nav">
+          <ul class="footer-nav__ul">
+            <li class="footer-nav__li">
+              <a href="#" class="footer-nav__a _active">Home</a>
+            </li>
+            <li class="footer-nav__li">
+              <a href="#about" class="footer-nav__a _active">About Me</a>
+            </li>
+            <li class="footer-nav__li">
+              <a href="#works" class="footer-nav__a _active">Projects</a>
+            </li>
+            <li class="footer-nav__li">
+              <a href="#contacts" class="footer-nav__a _active">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+      <form>
+        <div class="form__data data">
+          <div class="data-wrapper">
+            <div class="data__name">
+              <label for="fname">Your name:</label>
+              <input type="text" id="fname" placeholder="Name" />
+            </div>
+            <div class="data__email">
+              <label for="email">Your e-mail:</label>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+          </div>
+          <label for="msg">Your message:</label>
+        </div>
+        <textarea name="" id="msg" resize placeholder="Message"></textarea>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

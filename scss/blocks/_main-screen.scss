@@ -1,0 +1,97 @@
+.button-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  @include desktop-small {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.main-screen {
+  &-wrapper {
+    display: flex;
+    gap: 48px;
+    padding-top: 163px;
+    @include desktop-small {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  &__info {
+    padding-top: 40px;
+    max-width: 686px;
+    padding-left: 100px;
+    position: relative;
+    @include desktop-small {
+      padding-left: 0;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+    &::before {
+      content: "";
+      background: url("./img/icons/spring-arrow.svg") no-repeat;
+      position: absolute;
+      color: $details;
+      width: 90px;
+      height: 222px;
+      top: 100px;
+      left: 10px;
+      @include desktop-small {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    @include text($font-primary, 700, 96px, 96px, $color-white);
+    margin-bottom: 48px;
+    @include desktop-small {
+      font-size: 56px;
+    }
+    span {
+      color: $main-color;
+    }
+  }
+  &__next {
+    display: inline-block;
+    padding: 30px 38px;
+    background: $dark;
+    position: absolute;
+    right: 200px;
+    bottom: -103px;
+    @include desktop-small {
+      display: none;
+    }
+    .next-icon {
+      width: 21px;
+      height: 36px;
+      color: $secondary-color;
+    }
+  }
+
+  &__photo {
+    max-width: 550px;
+    position: relative;
+    z-index: 2;
+    @include desktop-small {
+      flex-shrink: 1;
+      width: 100%;
+      margin: auto;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("./img/icons/ellipse.svg") no-repeat;
+      width: 348px;
+      height: 24px;
+      left: 0;
+      bottom: 90px;
+      z-index: -1;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

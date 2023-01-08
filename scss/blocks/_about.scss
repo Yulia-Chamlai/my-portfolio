@@ -1,0 +1,88 @@
+.about-wrapper {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  @include desktop-small {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+.about {
+  border-bottom: 1px solid $border;
+  margin-bottom: 132px;
+  &__info {
+    max-width: 395px;
+    position: relative;
+    @include desktop-small {
+      max-width: 100%;
+      margin: auto;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("./img/icons/music-icon.svg") no-repeat;
+      left: 0;
+      top: -96px;
+      width: 62px;
+      height: 50px;
+      color: $details;
+      @include mobile {
+        display: none;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("./img/icons/lightbulb.svg") no-repeat;
+      right: -15px;
+      top: 10px;
+      width: 73px;
+      height: 95px;
+      color: $details;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__info-title {
+    @include text($font-primary, 700, 64px, 96px, $color-white);
+    margin-top: 30px;
+    @include desktop-small {
+      text-align: center;
+    }
+    span {
+      color: $main-color;
+    }
+  }
+
+  &__info-desc {
+    @include text($font-primary, 400, 18px, 27px, $secondary-color);
+    @include desktop-small {
+      font-size: 24px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    @include desktop-small {
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      flex-shrink: 1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("./img/icons/ellipse.svg") no-repeat;
+      width: 348px;
+      height: 24px;
+      left: 160px;
+      bottom: -10px;
+      z-index: -1;
+    }
+  }
+}

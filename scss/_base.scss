@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-primary;
+  margin: 0;
+
+  background: $bg-color;
+}
+.container {
+  max-width: 1315px;
+  padding: 0 25px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: $logo-color;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  padding: 10px 32px;
+  display: inline-block;
+  border: 0;
+  outline: none;
+  border-radius: 24px;
+  @include text($font-primary, 700, 18px, 27px, $logo-color);
+  cursor: pointer;
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.btn-primary {
+  background: $main-color;
+}
+
+.btn-secondary {
+  background: $dark;
+}
+.wrapper {
+  overflow: hidden;
+}
