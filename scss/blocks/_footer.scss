@@ -17,17 +17,12 @@
     }
   }
 
-  &__li {
-  }
-
   &__a {
     @include text($font-primary, 400, 18px, 27px, $logo-color);
     transition: $transition;
     &:hover {
       color: $main-color;
       transform: translateY(-10px);
-    }
-    &_active {
     }
   }
 }

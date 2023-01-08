@@ -50,6 +50,9 @@
     @include desktop-small {
       font-size: 56px;
     }
+    @include mobile {
+      font-size: 46px;
+    }
     span {
       color: $main-color;
     }

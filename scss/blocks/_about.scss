@@ -54,6 +54,9 @@
     @include desktop-small {
       text-align: center;
     }
+    @include mobile {
+      font-size: 46px;
+    }
     span {
       color: $main-color;
     }
