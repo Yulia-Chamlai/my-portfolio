@@ -6,6 +6,20 @@
     padding-top: 146px;
     @include text($font-primary, 700, 64px, 96px, $color-white);
     margin-bottom: 55px;
+    &:hover {
+      animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s
+        both;
+      @keyframes text-focus-in {
+        0% {
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+    }
     @include desktop-small {
       text-align: center;
       padding-top: 80px;
@@ -49,6 +63,20 @@
     right: -670px;
     top: 172px;
     width: 100%;
+    &:hover {
+      animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s
+        both;
+      @keyframes text-focus-in {
+        0% {
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+    }
     @include desktop-small {
       display: none;
     }
