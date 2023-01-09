@@ -11,12 +11,40 @@
     max-width: 435px;
     font-family: $font-secondary;
     @include text($font-secondary, 700, 24px, 36px, $logo-color);
+    &:hover,
+    &:active {
+      letter-spacing: 4px;
+    }
   }
 
   &__link {
     color: $logo-color;
+    position: relative;
+    transition: $transition;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+    &:hover {
+      width: 300px;
+    }
     span {
       color: $main-color;
+    }
+    &:hover:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: rgba(0, 172, 181, 0.678);
+      top: -5px;
+      left: 0;
+    }
+    &:hover:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.523);
+      bottom: -5px;
+      right: 0;
     }
   }
 
@@ -58,11 +86,13 @@
     }
 
     &__a {
+      display: inline-block;
       @include text($font-primary, 400, 18px, 27px, $logo-color);
       transition: $transition;
+
       &:hover {
         color: $main-color;
-        transform: translateY(-10px);
+        transform: scale(1.2);
       }
 
       @include desktop-small {
@@ -86,7 +116,7 @@
       z-index: 9;
       width: 100%;
       height: 100%;
-      background: #00adb5a1;
+      background: #00adb5eb;
       transition: $transition;
     }
   }

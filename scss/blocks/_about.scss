@@ -64,6 +64,12 @@
 
   &__info-desc {
     @include text($font-primary, 400, 18px, 27px, $secondary-color);
+    a {
+      transition: $transition;
+    }
+    a:hover {
+      color: $main-color;
+    }
     @include desktop-small {
       font-size: 24px;
     }
@@ -86,6 +92,9 @@
       left: 160px;
       bottom: -10px;
       z-index: -1;
+      @include desktop-small {
+        display: none;
+      }
     }
   }
 }

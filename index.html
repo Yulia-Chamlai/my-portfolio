@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="html" scroll-behavior:smooth>
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body id="body">
+    <!--
+
+      <div class="vl"></div>
+    -->
     <div class="wrapper">
+      <!--HEADER START-->
       <div class="header-wrapper">
         <div class="container">
           <header class="header">
@@ -68,6 +73,8 @@
           </header>
         </div>
       </div>
+      <!--HEADER END-->
+      <!--MAIN-SCREEN START-->
       <section class="main-screen">
         <div class="container">
           <div class="main-screen-wrapper">
@@ -101,25 +108,31 @@
             <div class="main-screen__photo">
               <img src="./img/icons/man-main-screen.svg" alt="man" />
             </div>
-            <!--
 
-              <form>
-                <label for="fname">Your name:</label>
-                <input type="text" id="fname" placeholder="Name" />
-                <label for="email">Your e-mail:</label>
-                <input type="email" id="email" placeholder="Email" />
-                <label for="msg">Your message:</label>
-                <textarea
-                  name=""
-                  id="msg"
-                  resize
-                  placeholder="Message"
-                ></textarea>
-              </form>
-            -->
+            <!--
+  <form>
+    <div class="form__data data">
+      <div class="data__name">
+        <label for="fname">Your name:</label>
+        <input type="text" id="fname" placeholder="Name" />
+      </div>
+      <div class="data__email">
+        <label for="email">Your e-mail:</label>
+        <input type="email" id="email" placeholder="Email" />
+      </div>
+      <div class="data__text">
+        <label for="msg">Your message:</label>
+        <textarea name="" id="msg" placeholder="Message"></textarea>
+      </div>
+      <button class="btn btn-primary">Send Message</button>
+    </div>
+  </form>
+-->
           </div>
         </div>
       </section>
+      <!--MAIN-SCREEN END-->
+      <!--ABOUT START-->
       <section class="about" id="about">
         <div class="container">
           <div class="about-wrapper">
@@ -128,7 +141,7 @@
               <p class="about__info-desc">
                 Hi, I'm Yulia, cerificated html/css developer. I can transform
                 your design into a code with ease. If you interested in my help
-                than follow to section "Contact me".
+                than follow to section <a href="#contacts">"Contact me"</a> .
               </p>
             </div>
             <div class="about__img">
@@ -137,7 +150,8 @@
           </div>
         </div>
       </section>
-
+      <!--ABOUT END-->
+      <!--WORKS START-->
       <section class="works" id="works">
         <div class="container">
           <div class="works__title">My recent <span> works</span></div>
@@ -149,10 +163,14 @@
               <div class="overlay">
                 <div class="overlay__title">WK</div>
                 <div class="overlay__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Html/css/ Adaptive version/ Grid-layout/ Forms/ Hover effects/
+                  Responsive menu.
                 </div>
                 <div class="overlay__btn btn-primary">
-                  <a href="https://github.com/Yulia-Chamlai/WK-portfolio">
+                  <a
+                    href="https://github.com/Yulia-Chamlai/WK-portfolio"
+                    target="_blank"
+                  >
                     Details</a
                   >
                 </div>
@@ -165,10 +183,14 @@
               <div class="overlay">
                 <div class="overlay__title">QD-Center</div>
                 <div class="overlay__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Html/css/ Bootstrap/ Aadaptive version/ Slider element/
+                  Responsive cards/ Hover effects/ Responsive menu.
                 </div>
                 <div class="overlay__btn btn-primary">
-                  <a href="https://github.com/Yulia-Chamlai/QD-Center">
+                  <a
+                    href="https://github.com/Yulia-Chamlai/QD-Center"
+                    target="_blank"
+                  >
                     Details</a
                   >
                 </div>
@@ -182,10 +204,14 @@
               <div class="overlay">
                 <div class="overlay__title">Logoipsum</div>
                 <div class="overlay__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Html/css/ Adaptive version/ Grid-layout/ Hover effects/ Pseudo
+                  elements/ Accordion element/ Slider element/ Responsive menu
                 </div>
                 <div class="overlay__btn btn-primary">
-                  <a href="https://github.com/Yulia-Chamlai/logoipsum-project">
+                  <a
+                    href="https://github.com/Yulia-Chamlai/logoipsum-project"
+                    target="_blank"
+                  >
                     Details</a
                   >
                 </div>
@@ -199,11 +225,13 @@
               <div class="overlay">
                 <div class="overlay__title">The power</div>
                 <div class="overlay__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Html/css/ Adaptive version/ Simple design/ Hover effects/
+                  Responsive menu
                 </div>
                 <div class="overlay__btn btn-primary">
                   <a
                     href="https://github.com/Yulia-Chamlai/The-power-of-simplicity"
+                    target="_blank"
                   >
                     Details</a
                   >
@@ -218,10 +246,16 @@
               <div class="overlay">
                 <div class="overlay__title">Alivio</div>
                 <div class="overlay__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Html/css/ Adaptive version/ Responsive cards/ Hover effects/
+                  Responsive menu
                 </div>
                 <div class="overlay__btn btn-primary">
-                  <a href="https://github.com/Yulia-Chamlai/Alivio"> Details</a>
+                  <a
+                    href="https://github.com/Yulia-Chamlai/Alivio"
+                    target="_blank"
+                  >
+                    Details</a
+                  >
                 </div>
               </div>
             </div>
@@ -233,10 +267,13 @@
               <div class="overlay">
                 <div class="overlay__title">Watch</div>
                 <div class="overlay__desc">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Html/css/ Adaptive version/ Hover effects/ Pseudo elements
                 </div>
                 <div class="overlay__btn btn-primary">
-                  <a href=" https://github.com/Yulia-Chamlai/Watch-project">
+                  <a
+                    href=" https://github.com/Yulia-Chamlai/Watch-project"
+                    target="_blank"
+                  >
                     Details</a
                   >
                 </div>
@@ -245,7 +282,8 @@
           </div>
         </div>
       </section>
-
+      <!--WORKS END-->
+      <!--CONTACTS START-->
       <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__title">Contact <span>me</span></div>
@@ -273,7 +311,7 @@
               <div class="contacts__info-title">E-mail</div>
               <a
                 class="contacts__info-link"
-                href="yuliachamlai@gmail.com"
+                href=" mailto: yuliachamlai@gmail.com"
                 target="_blank"
                 >yuliachamlai@gmail.com</a
               >
@@ -293,6 +331,8 @@
           </div>
         </div>
       </section>
+      <!--CONTACTS END-->
+      <!--FOOTER START-->
       <footer class="footer">
         <nav id="nav" class="footer-nav nav">
           <ul class="footer-nav__ul">
@@ -311,22 +351,7 @@
           </ul>
         </nav>
       </footer>
-      <form>
-        <div class="form__data data">
-          <div class="data-wrapper">
-            <div class="data__name">
-              <label for="fname">Your name:</label>
-              <input type="text" id="fname" placeholder="Name" />
-            </div>
-            <div class="data__email">
-              <label for="email">Your e-mail:</label>
-              <input type="email" id="email" placeholder="Email" />
-            </div>
-          </div>
-          <label for="msg">Your message:</label>
-        </div>
-        <textarea name="" id="msg" resize placeholder="Message"></textarea>
-      </form>
+      <!--FOOTER END-->
     </div>
 
     <script src="script.js"></script>

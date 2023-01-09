@@ -20,31 +20,10 @@
   &__a {
     @include text($font-primary, 400, 18px, 27px, $logo-color);
     transition: $transition;
+    display: inline-block;
     &:hover {
       color: $main-color;
-      transform: translateY(-10px);
+      transform: scale(1.2);
     }
-  }
-}
-.data {
-  background: $bg-color;
-  max-width: 200px;
-  label {
-    @include text($font-primary, 700, 16px, 22px, $logo-color);
-    input {
-      background: $dark;
-      padding: 10px;
-      border-radius: 10px;
-      max-width: 90px;
-    }
-  }
-
-  &-wrapper {
-    display: flex;
-    gap: 20px;
-  }
-  &__name {
-  }
-  &__email {
   }
 }

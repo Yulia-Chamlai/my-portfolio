@@ -348,7 +348,12 @@ template {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   margin: 0;
   background: #222831;
@@ -386,6 +391,14 @@ h2,
 p {
   margin: 0;
   padding: 0;
+}
+
+.vl {
+  border-right: 1px solid rgba(238, 238, 238, 0.1);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 525px;
 }
 
 .btn {
@@ -510,6 +523,11 @@ p {
 
 .btn-secondary {
   background: rgba(57, 62, 70, 0.75);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.btn-secondary:hover {
+  outline: 2px solid #00adb5;
 }
 
 .wrapper {
@@ -542,11 +560,40 @@ p {
   line-height: 36px;
   color: #eeeeee;
 }
+.header__logo:hover, .header__logo:active {
+  letter-spacing: 4px;
+}
 .header__link {
   color: #eeeeee;
+  position: relative;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+          transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+.header__link:hover {
+  width: 300px;
 }
 .header__link span {
   color: #00adb5;
+}
+.header__link:hover:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 172, 181, 0.678);
+  top: -5px;
+  left: 0;
+}
+.header__link:hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.523);
+  bottom: -5px;
+  right: 0;
 }
 .header__burger {
   display: none;
@@ -603,6 +650,7 @@ p {
   }
 }
 .header-nav__a {
+  display: inline-block;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -613,8 +661,8 @@ p {
 }
 .header-nav__a:hover {
   color: #00adb5;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media (max-width: 1200px) {
   .header-nav__a {
@@ -643,7 +691,7 @@ p {
     z-index: 9;
     width: 100%;
     height: 100%;
-    background: #00adb5a1;
+    background: #00adb5eb;
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
   }
@@ -668,6 +716,9 @@ p {
   }
 }
 
+.main-screen {
+  position: relative;
+}
 .main-screen-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -739,7 +790,7 @@ p {
   padding: 30px 38px;
   background: rgba(57, 62, 70, 0.75);
   position: absolute;
-  right: 200px;
+  right: 202px;
   bottom: -103px;
 }
 @media (max-width: 1200px) {
@@ -775,10 +826,52 @@ p {
   bottom: 90px;
   z-index: -1;
 }
+@media (max-width: 1200px) {
+  .main-screen__photo::before {
+    display: none;
+  }
+}
 .main-screen__photo img {
   width: 100%;
 }
 
+/*Form example---
+.data {
+  display: none;
+  position: absolute;
+  padding: 30px;
+  background: $bg-color;
+  max-width: 500px;
+  outline: 1px solid $border;
+  border-radius: 10px;
+  label {
+    @include text($font-primary, 700, 16px, 22px, $logo-color);
+  }
+  input,
+  textarea {
+    background: $dark;
+    padding: 15px 7px;
+    border-radius: 18px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    @include text($font-primary, 400, 16px, 22px, $color-white);
+  }
+
+  &__name,
+  &__email,
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 200px;
+  }
+}
+*/
 .about-wrapper {
   margin-top: 300px;
   display: -webkit-box;
@@ -872,6 +965,13 @@ p {
   line-height: 27px;
   color: rgba(238, 238, 238, 0.75);
 }
+.about__info-desc a {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.about__info-desc a:hover {
+  color: #00adb5;
+}
 @media (max-width: 1200px) {
   .about__info-desc {
     font-size: 24px;
@@ -898,6 +998,11 @@ p {
   left: 160px;
   bottom: -10px;
   z-index: -1;
+}
+@media (max-width: 1200px) {
+  .about__img::after {
+    display: none;
+  }
 }
 
 .works {
@@ -1035,6 +1140,9 @@ p {
   max-width: 130px;
   text-align: center;
 }
+.overlay__btn a:hover {
+  color: black;
+}
 @media (max-width: 1200px) {
   .overlay__btn {
     max-width: 100%;
@@ -1089,11 +1197,18 @@ p {
   color: #00adb5;
 }
 .contacts__info-link {
+  display: inline-block;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: rgba(238, 238, 238, 0.75);
+}
+.contacts__info-link:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .contacts__img {
   position: absolute;
@@ -1147,33 +1262,10 @@ p {
   color: #eeeeee;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+  display: inline-block;
 }
 .footer-nav__a:hover {
   color: #00adb5;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.data {
-  background: #222831;
-  max-width: 200px;
-}
-.data label {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: #eeeeee;
-}
-.data label input {
-  background: rgba(57, 62, 70, 0.75);
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 90px;
-}
-.data-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

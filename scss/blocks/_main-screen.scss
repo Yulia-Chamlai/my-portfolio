@@ -9,6 +9,7 @@
 }
 
 .main-screen {
+  position: relative;
   &-wrapper {
     display: flex;
     gap: 48px;
@@ -62,7 +63,7 @@
     padding: 30px 38px;
     background: $dark;
     position: absolute;
-    right: 200px;
+    right: 202px;
     bottom: -103px;
     @include desktop-small {
       display: none;
@@ -92,9 +93,50 @@
       left: 0;
       bottom: 90px;
       z-index: -1;
+      @include desktop-small {
+        display: none;
+      }
     }
     img {
       width: 100%;
     }
   }
 }
+
+/*Form example---
+.data {
+  display: none;
+  position: absolute;
+  padding: 30px;
+  background: $bg-color;
+  max-width: 500px;
+  outline: 1px solid $border;
+  border-radius: 10px;
+  label {
+    @include text($font-primary, 700, 16px, 22px, $logo-color);
+  }
+  input,
+  textarea {
+    background: $dark;
+    padding: 15px 7px;
+    border-radius: 18px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    @include text($font-primary, 400, 16px, 22px, $color-white);
+  }
+
+  &__name,
+  &__email,
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 200px;
+  }
+}
+*/

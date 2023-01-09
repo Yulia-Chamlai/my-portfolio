@@ -36,7 +36,12 @@
   }
 
   &__info-link {
+    display: inline-block;
+    transition: $transition;
     @include text($font-primary, 400, 16px, 24px, $secondary-color);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__img {

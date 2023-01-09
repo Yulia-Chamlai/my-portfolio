@@ -99,6 +99,9 @@
     border-radius: 24px;
     max-width: 130px;
     text-align: center;
+    a:hover {
+      color: black;
+    }
     @include desktop-small {
       max-width: 100%;
       padding: 15px 32px;
