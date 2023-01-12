@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mobile {
+    text-align: center;
+  }
 }
 .footer-nav {
   &__ul {
@@ -14,6 +17,7 @@
       grid-template-columns: 1fr 1fr;
       justify-content: center;
       align-items: center;
+      gap: 25px;
     }
   }
 

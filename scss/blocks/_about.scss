@@ -8,11 +8,18 @@
     width: 100%;
     margin-top: 100px;
   }
+  @include mobile {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .about {
   border-bottom: 1px solid $border;
   margin-bottom: 132px;
+  @include mobile {
+    margin-bottom: 30px;
+  }
   &__info {
     max-width: 395px;
     position: relative;
@@ -85,7 +92,7 @@
       color: $main-color;
     }
     @include desktop-small {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 

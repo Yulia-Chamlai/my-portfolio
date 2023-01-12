@@ -26,6 +26,8 @@
     }
     @include mobile {
       font-size: 44px;
+      margin-bottom: 15px;
+      padding-top: 40px;
     }
     span {
       color: $main-color;
@@ -38,6 +40,9 @@
     @include desktop-small {
       margin: auto;
       margin-bottom: 25px;
+    }
+    @include mobile {
+      text-align: center;
     }
   }
 

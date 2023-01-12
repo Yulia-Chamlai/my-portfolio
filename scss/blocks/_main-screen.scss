@@ -18,6 +18,9 @@
       flex-direction: column;
       width: 100%;
     }
+    @include mobile {
+      padding-top: 0;
+    }
   }
   &__info {
     padding-top: 40px;
@@ -120,41 +123,3 @@
     }
   }
 }
-
-/*Form example---
-.data {
-  display: none;
-  position: absolute;
-  padding: 30px;
-  background: $bg-color;
-  max-width: 500px;
-  outline: 1px solid $border;
-  border-radius: 10px;
-  label {
-    @include text($font-primary, 700, 16px, 22px, $logo-color);
-  }
-  input,
-  textarea {
-    background: $dark;
-    padding: 15px 7px;
-    border-radius: 18px;
-    width: 100%;
-    border: 0;
-    outline: none;
-    @include text($font-primary, 400, 16px, 22px, $color-white);
-  }
-
-  &__name,
-  &__email,
-  &__text {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  textarea {
-    resize: vertical;
-    height: 200px;
-  }
-}
-*/
