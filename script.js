@@ -6,3 +6,7 @@ function navToggle() {
   var body = document.getElementById("body");
   body.classList.toggle("_overflow");
 }
+/*
+function lockScroll() {
+  document.body.classList.toggle("lock-scroll");
+}*/
