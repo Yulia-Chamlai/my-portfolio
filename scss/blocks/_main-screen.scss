@@ -42,6 +42,16 @@
       height: 222px;
       top: 100px;
       left: 10px;
+      animation: text-blur-out 5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.3s
+        infinite both;
+      @keyframes text-blur-out {
+        0% {
+          filter: blur(0.01);
+        }
+        100% {
+          filter: blur(12px) opacity(0%);
+        }
+      }
       @include desktop-small {
         display: none;
       }

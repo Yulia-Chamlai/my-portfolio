@@ -7,11 +7,17 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  &._overflow {
+    overflow: hidden;
+  }
   position: relative;
   font-family: $font-primary;
   margin: 0;
-  background: $bg-color;
+  background-image: url("./img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .container {
   max-width: 1315px;
   padding: 0 25px;

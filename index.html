@@ -21,11 +21,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body id="body">
-    <!--
-
-      <div class="vl"></div>
-    -->
+  <body id="body" onclick="_overflow">
     <div class="wrapper">
       <!--HEADER START-->
       <div class="header-wrapper">
@@ -48,16 +44,35 @@
             <nav id="nav" class="header-nav nav">
               <ul class="header-nav__ul">
                 <li class="header-nav__li">
-                  <a href="#" class="header-nav__a _active">Home</a>
+                  <a
+                    href="#"
+                    class="header-nav__a _active"
+                    onclick="navToggle()"
+                    >Home</a
+                  >
                 </li>
                 <li class="header-nav__li">
-                  <a href="#about" i class="header-nav__a _active">About Me</a>
+                  <a
+                    href="#about"
+                    i
+                    class="header-nav__a _active"
+                    onclick="navToggle()"
+                    >About Me</a
+                  >
                 </li>
                 <li class="header-nav__li">
-                  <a href="#works" class="header-nav__a _active">Projects</a>
+                  <a
+                    href="#works"
+                    class="header-nav__a _active"
+                    onclick="navToggle()"
+                    >Projects</a
+                  >
                 </li>
                 <li class="header-nav__li">
-                  <a href="#contacts" class="header-nav__a _active"
+                  <a
+                    href="#contacts"
+                    class="header-nav__a _active"
+                    onclick="navToggle()"
                     >Contact me</a
                   >
                 </li>
@@ -121,9 +136,14 @@
             <div class="about__info">
               <h2 class="about__info-title">About <span>me</span></h2>
               <p class="about__info-desc">
-                Hi, I'm Yulia, cerificated html/css developer. I can transform
-                your design into a code with ease. If you interested in my help
-                than follow to section <a href="#contacts">"Contact me"</a> .
+                Hi, I'm Yulia, cerificated html/css entry-level front-end
+                developer with 6 months of experience in maintaining and
+                building web pages. Seeking for new opportunities and challenges
+                that will expand my skill set. As a person who is starting out,
+                I am constantly seeking for new ways to grow and expand my
+                skills. I know how to transform your design into a code with
+                ease. If you interested in my help than follow to section
+                <a href="#contacts">"Contact me"</a> .
               </p>
             </div>
             <div class="about__img">
@@ -275,7 +295,7 @@
               <div class="contacts__info-title">Telegram</div>
               <a
                 class="contacts__info-link"
-                href="@yuliachamlai"
+                href=" https://t.me/yuliachamlai"
                 target="_blank"
                 >@yuliachamlai</a
               >
