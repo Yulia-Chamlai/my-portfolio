@@ -667,6 +667,7 @@ p {
   }
 }
 .header-nav__a {
+  position: relative;
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -676,10 +677,31 @@ p {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
+.header-nav__a::after, .header-nav__a::before {
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.header-nav__a::before {
+  top: -5px;
+  right: 0;
+  background: #00adb5;
+}
+.header-nav__a::after {
+  bottom: -5px;
+  left: 0;
+  background: rgba(238, 238, 238, 0.1);
+}
 .header-nav__a:hover {
   color: #00adb5;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+.header-nav__a:hover::after, .header-nav__a:hover::before {
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .header-nav__a {

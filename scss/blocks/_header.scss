@@ -92,13 +92,37 @@
     }
 
     &__a {
+      position: relative;
       display: inline-block;
       @include text($font-primary, 400, 18px, 27px, $logo-color);
       transition: $transition;
 
+      &::after,
+      &::before {
+        content: "";
+        height: 2px;
+
+        position: absolute;
+        width: 0;
+        transition: 0.5s;
+      }
+      &::before {
+        top: -5px;
+        right: 0;
+        background: $main-color;
+      }
+      &::after {
+        bottom: -5px;
+        left: 0;
+        background: $border;
+      }
       &:hover {
         color: $main-color;
         transform: scale(1.2);
+        &::after,
+        &::before {
+          width: 100%;
+        }
       }
 
       @include desktop-small {
