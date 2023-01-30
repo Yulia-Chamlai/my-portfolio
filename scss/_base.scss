@@ -138,7 +138,7 @@ p {
   background: $dark;
   transition: $transition;
   &:hover {
-    outline: 2px solid $main-color;
+    transform: translateY(2px);
   }
 }
 

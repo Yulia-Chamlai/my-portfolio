@@ -524,7 +524,8 @@ p {
   transition: 0.3s all ease-in-out;
 }
 .btn-secondary:hover {
-  outline: 2px solid #00adb5;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .wrapper {
