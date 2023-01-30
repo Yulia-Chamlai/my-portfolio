@@ -6,12 +6,11 @@ function navToggle() {
   var body = document.getElementById("body");
   body.classList.toggle("_overflow");
 }
-
-/*function navClose() {
+function navClose() {
   var navToggleNav = document.getElementById("nav");
   navToggleNav.classList.remove("_active");
   var html = document.getElementById("html");
-  html.classList.toggle("_overflow");
+  html.classList.remove("_overflow");
   var body = document.getElementById("body");
-  body.classList.toggle("_overflow");
-}*/
+  body.classList.remove("_overflow");
+}
